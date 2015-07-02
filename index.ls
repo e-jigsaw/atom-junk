@@ -11,7 +11,7 @@ module.exports =
       ~> @create!
 
   create: ->
-    memodir = atom.config.get \atom-memolist.memo_dir_path .replace /~/, process.env.HOME
+    memodir = atom.config.get \junk.dirPath .replace /~/, process.env.HOME
     now = moment!.format \YYYY-MM-DD-HHmm
     newFile = path.join memodir, "./#{now}.md"
     atom.workspace.open newFile
