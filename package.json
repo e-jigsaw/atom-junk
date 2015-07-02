@@ -3,6 +3,7 @@
   "version": "0.3.0",
   "description": "create New simply memo on atom editor.",
   "repository": "https://github.com/tgfjt/atom-memolist-new",
+  "main": "build/index.js",
   "bugs": {
     "url": "https://github.com/tgfjt/atom-memolist-new/issues"
   },
@@ -12,5 +13,11 @@
   },
   "dependencies": {
     "moment": "~2.5.1"
+  },
+  "devDependencies": {
+    "livescript": "^1.4.0"
+  },
+  "scripts": {
+    "build": "lsc -cbo build index.ls"
   }
 }
