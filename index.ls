@@ -4,15 +4,14 @@ require! {
 }
 
 module.exports =
-  activate: (state)->
+  activate: ->
     atom.commands.add do
       \atom-workspace
-      \atom-memolist-new:create
+      \junk:create
       ~> @create!
 
   create: ->
     memodir = atom.config.get \atom-memolist.memo_dir_path .replace /~/, process.env.HOME
-    today = moment!.format \YYYY-MM-DD
-    time = moment!.format \HHmm
-    newFile = path.join memodir, "./#{today}", "#{time}.md"
+    now = moment!.format \YYYY-MM-DD-HHmm
+    newFile = path.join memodir, "./#{now}.md"
     atom.workspace.open newFile

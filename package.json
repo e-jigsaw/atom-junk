@@ -1,11 +1,11 @@
 {
-  "name": "atom-memolist-new",
+  "name": "junk",
   "version": "0.3.0",
   "description": "create New simply memo on atom editor.",
-  "repository": "https://github.com/tgfjt/atom-memolist-new",
+  "repository": "https://github.com/e-jigsaw/atom-junk",
   "main": "build/index.js",
   "bugs": {
-    "url": "https://github.com/tgfjt/atom-memolist-new/issues"
+    "url": "https://github.com/e-jigsaw/atom-junk/issues"
   },
   "license": "MIT",
   "engines": {
