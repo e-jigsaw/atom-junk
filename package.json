@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "description": "create New simply memo on atom editor.",
   "repository": "https://github.com/e-jigsaw/atom-junk",
-  "main": "build/index.js",
+  "main": "index.js",
   "bugs": {
     "url": "https://github.com/e-jigsaw/atom-junk/issues"
   },
@@ -12,12 +12,10 @@
     "atom": ">0.50.0"
   },
   "dependencies": {
+    "atom-space-pen-views": "^2.0.5",
     "moment": "~2.5.1"
   },
   "devDependencies": {
     "livescript": "^1.4.0"
-  },
-  "scripts": {
-    "build": "lsc -cbo build index.ls"
   }
 }
