@@ -11,7 +11,7 @@ module.exports =
     atom.commands.add do
       \atom-workspace
       \junk:create
-      ~> @create @memodir
+      ~> create @memodir
     atom.commands.add do
       \atom-workspace
       \junk:find
