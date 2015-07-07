@@ -2,7 +2,7 @@ require! {
   moment
   path
   \./create.ls
-  \./FindView.ls
+  \./FindFileView.ls
 }
 
 module.exports =
@@ -14,5 +14,5 @@ module.exports =
       ~> create @memodir
     atom.commands.add do
       \atom-workspace
-      \junk:find
-      ~> new FindView @memodir
+      \junk:find-file
+      ~> new FindFileView @memodir
