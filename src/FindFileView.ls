@@ -4,7 +4,7 @@ require! {
   \atom-space-pen-views : {SelectListView, $$}
 }
 
-class FindView extends SelectListView
+class FindFileView extends SelectListView
   initialize: (@memodir)->
     super!
     @toggle!
@@ -31,4 +31,4 @@ class FindView extends SelectListView
 
   cancelled: -> @hide!
 
-module.exports = FindView
+module.exports = FindFileView

@@ -3,6 +3,7 @@ require! {
   path
   \./create.ls
   \./FindFileView.ls
+  \./FindContentsView.ls
 }
 
 module.exports =
@@ -16,3 +17,7 @@ module.exports =
       \atom-workspace
       \junk:find-file
       ~> new FindFileView @memodir
+    atom.commands.add do
+      \atom-workspace
+      \junk:find-contents
+      ~> new FindContentsView @memodir
