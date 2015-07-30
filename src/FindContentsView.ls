@@ -50,7 +50,9 @@ class FindContentsView extends SelectListView
             preview
 
   confirmed: (file)->
-    atom.workspace.open path.join @memodir, file
+    atom.workspace.open do
+      file.filename
+      initialLine: file.line - 1
     @cancel!
 
   cancelled: -> @hide!
