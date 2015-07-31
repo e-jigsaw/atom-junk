@@ -4,6 +4,7 @@ require! {
   \./create.ls
   \./FindFileView.ls
   \./FindContentsView.ls
+  \./FindTodoView.ls
 }
 
 module.exports =
@@ -21,3 +22,7 @@ module.exports =
       \atom-workspace
       \junk:find-contents
       ~> new FindContentsView @memodir
+    atom.commands.add do
+      \atom-workspace
+      \junk:find-todo
+      ~> new FindTodoView @memodir

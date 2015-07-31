@@ -2,13 +2,14 @@ require! {
   \./FindView.ls
 }
 
-class FindContentsView extends FindView
+class FindTodoView extends FindView
   show: ->
     @panel ?= atom.workspace.addModalPanel do
       item: @
     @panel.show!
     @storeFocusedElement!
-    @filterEditorView.getModel!.getBuffer!.onDidChange @pt
+    @filterEditorView.getModel!.setText \TODO
+    @pt!
     @focusFilterEditor!
 
-module.exports = FindContentsView
+module.exports = FindTodoView
